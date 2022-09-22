@@ -1,4 +1,8 @@
-<div class="output">
+<script lang="ts">
+  import { theme } from '../stores/themeStore'
+</script>
+
+<div class="output" data-theme={$theme}>
   <p class="output__amount">0</p>
 </div>
 
@@ -9,11 +13,22 @@
     border-radius: 0.5rem;
     color: var(--clr-t1-text-main);
     background-color: var(--clr-t1-bg-accent);
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 
     &__amount {
       padding: 0.05em 0;
       font-size: 2.5em;
       text-align: end;
     }
+  }
+
+  .output[data-theme='2'] {
+    background-color: var(--clr-t2-bg-accent);
+    color: var(--clr-t2-text-main);
+  }
+
+  .output[data-theme='3'] {
+    background-color: var(--clr-t3-bg-secondary);
+    color: var(--clr-t3-text-main);
   }
 </style>

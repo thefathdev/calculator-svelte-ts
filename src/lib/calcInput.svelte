@@ -39,6 +39,7 @@
     padding: 1.75em 1.5em;
     border-radius: 0.75rem;
     background-color: var(--clr-t1-bg-secondary);
+    transition: background-color 300ms ease-in-out;
 
     &__table {
       display: grid;
@@ -49,5 +50,13 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+  }
+
+  .keys[data-theme='2'] {
+    background-color: var(--clr-t2-bg-secondary);
+  }
+
+  .keys[data-theme='3'] {
+    background-color: var(--clr-t3-bg-secondary);
   }
 </style>

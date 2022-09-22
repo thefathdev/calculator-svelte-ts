@@ -10,6 +10,7 @@
 
 <style lang="scss">
   .nav {
+    margin-bottom: 1.25em;
     display: flex;
     align-items: center;
 
@@ -17,6 +18,23 @@
       font-size: 2em;
       color: var(--clr-t1-text-main);
       margin-right: auto;
+      transition: color 300ms ease-in-out;
+    }
+  }
+
+  .nav[data-theme='2'] {
+    .nav {
+      &__logo {
+        color: var(--clr-t2-text-main);
+      }
+    }
+  }
+
+  .nav[data-theme='3'] {
+    .nav {
+      &__logo {
+        color: var(--clr-t3-text-main);
+      }
     }
   }
 </style>

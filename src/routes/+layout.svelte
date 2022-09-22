@@ -46,7 +46,7 @@
     --clr-t1-text-secondary: hsl(221, 14%, 31%);
 
     // theme two
-    --clr-t2-t2-bg-primary: hsl(0, 0%, 90%);
+    --clr-t2-bg-primary: hsl(0, 0%, 90%);
     --clr-t2-bg-secondary: hsl(0, 5%, 81%);
     --clr-t2-bg-accent: hsl(0, 0%, 93%);
 
@@ -64,7 +64,6 @@
 
     --clr-t3-bg-primary: hsl(268, 75%, 9%);
     --clr-t3-bg-secondary: hsl(268, 71%, 12%);
-    --clr-t3-bg-accent: hsl(268, 71%, 12%);
 
     --clr-t3-btn-bg-1: hsl(281, 89%, 26%);
     --clr-t3-btn-shadow-1: hsl(285, 91%, 52%);
@@ -75,7 +74,7 @@
 
     --clr-t3-text-secondary: white;
     --clr-t3-text-main: hsl(52, 100%, 62%);
-    --clr-t3-neutral-0: hsl(198, 20%, 13%);
+    --clr-t3-neutral-700: hsl(198, 20%, 13%);
   }
 
   .main {
@@ -84,6 +83,15 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    transition: background-color 300ms ease-in-out;
+  }
+
+  .main[data-theme='2'] {
+    background-color: var(--clr-t2-bg-primary);
+  }
+
+  .main[data-theme='3'] {
+    background-color: var(--clr-t3-bg-primary);
   }
 
   .container {
