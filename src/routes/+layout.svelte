@@ -9,7 +9,7 @@
     content="Calculator App made with SvelteKit and TypeScript"
   />
   <title>Calculator app | Frontend Mentor</title>
-  <link rel="stylesheet" href="../src/styles/styles.scss" />
+  <link rel="stylesheet" href="/styles/styles.css" />
 </svelte:head>
 
 <main class="main" data-theme={$theme}>

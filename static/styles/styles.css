@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/* ---RESET--- */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -71,4 +75,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ---------- */
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
 }
