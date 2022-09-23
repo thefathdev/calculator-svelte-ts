@@ -5,8 +5,10 @@
   export let big: boolean = true
 </script>
 
-<button data-theme={$theme} class="btn type-{type} {!big && 'small'}"
-  >{text}</button
+<button
+  on:click|preventDefault
+  data-theme={$theme}
+  class="btn type-{type} {!big && 'small'}">{text}</button
 >
 
 <style lang="scss">
@@ -15,6 +17,7 @@
   }
 
   .btn {
+    cursor: pointer;
     font-size: 2em;
     padding: 1.25rem 1rem 0.75rem;
     line-height: 1;
@@ -23,6 +26,12 @@
     text-align: center;
     transition: color 300ms ease-in-out, background-color 300ms ease-in-out,
       box-shadow 300ms ease-in-out;
+
+    @media (min-width: 36rem) {
+      font-size: 2.25em;
+      padding: 1rem 2rem 0.5rem;
+      border-radius: 0.5rem;
+    }
   }
 
   .type-1 {
@@ -75,5 +84,9 @@
 
   .small {
     font-size: 1.25em;
+
+    @media (min-width: 36rem) {
+      font-size: 1.5em;
+    }
   }
 </style>

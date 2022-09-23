@@ -1,9 +1,10 @@
 <script lang="ts">
   import { theme } from '../stores/themeStore'
+  import { value } from '../stores/valueStore'
 </script>
 
 <div class="output" data-theme={$theme}>
-  <p class="output__amount">0</p>
+  <p class="output__amount">{$value}</p>
 </div>
 
 <style lang="scss">
@@ -19,6 +20,10 @@
       padding: 0.05em 0;
       font-size: 2.5em;
       text-align: end;
+
+      @media (min-width: 36rem) {
+        font-size: 3.5em;
+      }
     }
   }
 

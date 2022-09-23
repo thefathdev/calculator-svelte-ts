@@ -83,6 +83,7 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: background-color 300ms ease-in-out;
   }
 
@@ -95,12 +96,7 @@
   }
 
   .container {
-    max-width: 36rem;
-    margin-inline: 1.5em;
-
-    @media (min-width: 36rem) {
-      margin-inline: auto;
-    }
+    padding-inline: 1.5em;
   }
 
   // frontend mentor attribution
