@@ -16,7 +16,6 @@
     border: none;
   }
 
-  // TODO: Make more interactive button
   .btn {
     cursor: pointer;
     font-size: 2em;
