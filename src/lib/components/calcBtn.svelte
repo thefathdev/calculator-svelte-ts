@@ -16,6 +16,7 @@
     border: none;
   }
 
+  // TODO: Make more interactive button
   .btn {
     cursor: pointer;
     font-size: 2em;
@@ -34,52 +35,77 @@
     }
   }
 
+  @mixin active-state($bg-color: hsl(0, 0%, 82%)) {
+    &:hover,
+    &:focus {
+      background-color: $bg-color;
+    }
+  }
+
   .type-1 {
     --box-shadow: var(--clr-t1-btn-shadow-1);
     background-color: var(--clr-t1-btn-bg-1, white);
     color: var(--clr-t1-text-main);
+
+    @include active-state(var(--clr-t1-btn-active-1));
   }
   .type-2 {
     --box-shadow: var(--clr-t1-btn-shadow-2);
     background-color: var(--clr-t1-btn-bg-2, white);
     color: var(--clr-t1-text-main);
+
+    @include active-state(var(--clr-t1-btn-active-2));
   }
   .type-3 {
     --box-shadow: var(--clr-t1-btn-shadow-3);
     background-color: var(--clr-t1-btn-bg-3, white);
     color: var(--clr-t1-text-secondary);
+
+    @include active-state(var(--clr-t1-btn-active-3));
   }
 
   .type-1[data-theme='2'] {
     --box-shadow: var(--clr-t2-btn-shadow-1);
     background-color: var(--clr-t2-btn-bg-1, white);
     color: var(--clr-t2-text-secondary);
+
+    @include active-state(var(--clr-t2-btn-active-1));
   }
   .type-2[data-theme='2'] {
     --box-shadow: var(--clr-t2-btn-shadow-2);
     background-color: var(--clr-t2-btn-bg-2, white);
     color: var(--clr-t2-text-secondary);
+
+    @include active-state(var(--clr-t2-btn-active-2));
   }
   .type-3[data-theme='2'] {
     --box-shadow: var(--clr-t2-btn-shadow-3);
     background-color: var(--clr-t2-btn-bg-3, white);
     color: var(--clr-t2-text-main);
+
+    @include active-state(var(--clr-t2-btn-active-3));
   }
 
   .type-1[data-theme='3'] {
     --box-shadow: var(--clr-t3-btn-shadow-1);
     background-color: var(--clr-t3-btn-bg-1, white);
     color: var(--clr-t3-text-secondary);
+
+    @include active-state(var(--clr-t3-btn-active-1));
   }
   .type-2[data-theme='3'] {
     --box-shadow: var(--clr-t3-btn-shadow-2);
     background-color: var(--clr-t3-btn-bg-2, white);
     color: var(--clr-t3-text-neutral-700);
+
+    @include active-state(var(--clr-t3-btn-active-2));
   }
   .type-3[data-theme='3'] {
     --box-shadow: var(--clr-t3-btn-shadow-3);
     background-color: var(--clr-t3-btn-bg-3, white);
     color: var(--clr-t3-text-main);
+
+    @include active-state(var(--clr-t3-btn-active-3));
   }
 
   .small {

@@ -37,10 +37,13 @@
 
     --clr-t1-btn-bg-1: hsl(225, 21%, 49%);
     --clr-t1-btn-shadow-1: hsl(224, 28%, 35%);
+    --clr-t1-btn-active-1: hsl(225, 71%, 78%);
     --clr-t1-btn-bg-2: hsl(6, 63%, 50%);
     --clr-t1-btn-shadow-2: hsl(6, 70%, 34%);
+    --clr-t1-btn-active-2: hsl(6, 82%, 64%);
     --clr-t1-btn-bg-3: hsl(30, 25%, 89%);
     --clr-t1-btn-shadow-3: hsl(28, 16%, 65%);
+    --clr-t1-btn-active-3: hsl(30, 100%, 99%);
 
     --clr-t1-text-main: white;
     --clr-t1-text-secondary: hsl(221, 14%, 31%);
@@ -52,10 +55,13 @@
 
     --clr-t2-btn-bg-1: hsl(185, 42%, 37%);
     --clr-t2-btn-shadow-1: hsl(185, 58%, 25%);
+    --clr-t2-btn-active-1: hsl(185, 40%, 55%);
     --clr-t2-btn-bg-2: hsl(25, 98%, 40%);
     --clr-t2-btn-shadow-2: hsl(25, 99%, 27%);
+    --clr-t2-btn-active-2: hsl(25, 85%, 54%);
     --clr-t2-btn-bg-3: hsl(45, 7%, 89%);
     --clr-t2-btn-shadow-3: hsl(35, 11%, 61%);
+    --clr-t2-btn-active-3: hsl(60, 3%, 95%);
 
     --clr-t2-text-main: hsl(60, 10%, 19%);
     --clr-t2-text-secondary: white;
@@ -67,10 +73,13 @@
 
     --clr-t3-btn-bg-1: hsl(281, 89%, 26%);
     --clr-t3-btn-shadow-1: hsl(285, 91%, 52%);
+    --clr-t3-btn-active-1: hsl(281, 82%, 42%);
     --clr-t3-btn-bg-2: hsl(176, 100%, 44%);
     --clr-t3-btn-shadow-2: hsl(177, 92%, 70%);
+    --clr-t3-btn-active-2: hsl(176, 100%, 75%);
     --clr-t3-btn-bg-3: hsl(268, 47%, 21%);
     --clr-t3-btn-shadow-3: hsl(290, 70%, 36%);
+    --clr-t3-btn-active-3: hsl(268, 47%, 45%);
 
     --clr-t3-text-secondary: white;
     --clr-t3-text-main: hsl(52, 100%, 62%);
